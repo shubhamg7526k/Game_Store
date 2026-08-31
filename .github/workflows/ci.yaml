@@ -9,6 +9,6 @@ jobs:
     steps:
       # Step 1: Get the code
       - uses: actions/checkout@v4
-      - run: py main.py
+      - run: python main.py
    
 
