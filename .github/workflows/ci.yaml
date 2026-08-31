@@ -1,0 +1,14 @@
+name: Build
+on:
+  push:
+    branches: [master]     
+
+jobs:
+  build:
+    runs-on: ubuntu-latest  # Runner: Linux machine
+    steps:
+      # Step 1: Get the code
+      - uses: actions/checkout@v4
+      - run: py main.py
+   
+
